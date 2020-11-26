@@ -1,0 +1,7 @@
+
+<div>
+  <h1 class="title">{{ title }}</h1>
+  <div class="links" *ngFor="let destination of destinations">
+    <a (click)="navigate(destination.code)" class="giant-button"> {{destination.name}} </a>
+  </div>
+</div>

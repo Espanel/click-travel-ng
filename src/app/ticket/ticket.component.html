@@ -1,0 +1,87 @@
+<div *ngFor="let item of tickets">
+  <div class="grid">
+    <div class="row bg-primary text-white">
+      <div class="col-9">
+        <h2>Boarding Pass</h2><br>
+        First Class
+      </div>
+      <div class="col-3 border-dotted">
+        <h3>Boarding Pass</h3><br>
+        First Class
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-9">
+        <h4 class="hidden">Passenger</h4><br>
+        <h4>{{item.passenger}}</h4>
+      </div>
+      <div class="col-3 border-dotted">
+        <h4 class="hidden">Passenger</h4><br>
+        <h4>{{item.passenger}}</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-9 row">
+        <div class="col-3">
+          <h4 class="hidden">Flight</h4><br>
+          <h4>{{item.flight}}</h4>
+        </div>
+        <div class="col-3">
+          <h4 class="hidden">From</h4><br>
+          <h4>{{item.from}}</h4>
+        </div>
+        <div class="col-3">
+          <h4 class="hidden">To</h4><br>
+          <h4>{{item.to}}</h4>
+        </div>
+        <div class="col-3">
+          <h4 class="hidden">Class</h4><br>
+          <h4>{{item.class}}</h4>
+        </div>
+      </div>
+      <div class="col-3 row border-dotted">
+        <div class="col-4">
+          <h4 class="hidden">Gate</h4><br>
+          <h4>{{item.gate}}</h4>
+        </div>
+        <div class="col-4">
+          <h4 class="hidden">Time</h4><br>
+          <h4>{{item.time}}</h4>
+        </div>
+        <div class="col-4">
+          <h4 class="hidden">Seat</h4><br>
+          <h4>{{item.seat}}</h4>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-9 row">
+        <div class="col-2">
+          <h4 class="hidden">Gate</h4><br>
+          <h4>{{item.gate}}</h4>
+        </div>
+        <div class="col-2">
+          <h4 class="hidden">Time</h4><br>
+          <h4>{{item.time}}</h4>
+        </div>
+        <div class="col-2">
+          <h4 class="hidden">Seat</h4><br>
+          <h4>{{item.seat}}</h4>
+        </div>
+        <div class="col-6">
+          <h4 class="hidden">Number</h4><br>
+          <h4>{{item.number}}</h4>
+        </div>
+      </div>
+      <div class="col-3 border-dotted">
+        <h4 class="hidden">Number</h4><br>
+        <h4>{{item.number}}</h4>
+      </div>
+    </div>
+    <div class="row bg-primary">
+      <div class="col-9"><br><br></div>
+      <div class="col-3  border-dotted"></div>
+    </div>
+
+  </div>
+</div>

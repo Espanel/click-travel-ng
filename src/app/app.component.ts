@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { ClickTravelService } from './services/click-travel.service';
+// RxJS v6+
+import { map } from 'rxjs/operators';
+import { Destination } from './models/destination'
 
 @Component({
   selector: 'app-root',
@@ -6,5 +10,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Choose your dream destination...';
+
 }
